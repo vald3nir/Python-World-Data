@@ -30,6 +30,10 @@ from routers.country_money import money_router
 
 app.register_blueprint(money_router)
 
+from routers.geolocation import geolocation_router
+
+app.register_blueprint(geolocation_router)
+
 
 # ---------------------------------------------------------------
 # START
