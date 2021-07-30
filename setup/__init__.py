@@ -4,11 +4,13 @@
 from subprocess import call
 
 libraries = [
-    # Flask libraries
+    # HTTP Client
+    "requests",
+    # Flask framework
     "Flask", "Flask-Cors",
     # Databases
     "Flask-PyMongo", "pymongo[srv]",
-    # Web Token
+    # Web token
     "jwt",
     # Geolocation
     "geopy",
