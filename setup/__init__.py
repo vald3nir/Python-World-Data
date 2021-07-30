@@ -4,6 +4,8 @@
 from subprocess import call
 
 libraries = [
+    # For run on Heroku Cloud Platform
+    "gunicorn",
     # HTTP Client
     "requests",
     # Flask framework
