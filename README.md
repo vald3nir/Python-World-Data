@@ -5,6 +5,7 @@ API to show world data like address and information about money
 ## Features:
 
 - links the images of country flags from the abbreviation of their respective currencies.
+- get a location's address from geographic coordinates
 
 ## APIs used:
 
