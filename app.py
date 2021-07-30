@@ -8,6 +8,7 @@ from flask_cors import CORS
 
 # Flask config
 # ---------------------------------------------------------------
+from routers import response_success
 
 app = Flask(__name__)
 
@@ -29,9 +30,15 @@ from routers.country_money import money_router
 
 app.register_blueprint(money_router)
 
+
 # ---------------------------------------------------------------
 # START
 # ---------------------------------------------------------------
+
+@app.route('/home', methods=['GET'])
+@app.route('/')
+def index():
+    return response_success({"message": "hello world"})
 
 
 port = int(os.environ.get('PORT', 5000))
