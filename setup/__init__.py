@@ -14,5 +14,5 @@ libraries = [
     "geopy",
 ]
 
-call("pip install " + ' '.join(libraries), shell=True)
+call("pip install --upgrade " + ' '.join(libraries), shell=True)
 call("pip freeze > ../requirements.txt", shell=True)
